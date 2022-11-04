@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "e5a2fdbe-11ec-4d3d-a127-ced1f4c8e5a9",
+		"name": "Node-DDD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users/635e49b32f17fd6e07cf351a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzVlZDY5OGJjN2Y0MjQ4ZGM2NTI2OTgiLCJpYXQiOjE2NjcxNzY2MzEsImV4cCI6MTY2NzI2MzAzMX0.5WjfqP-EHTZNvmbuCKw8mlu8s3oD94iXIB7Pcr9kComGiwyKiP26-hp6QPkWk3eUqoNC4J53wikCAs6QWyh3nf7wwiplRMnpaQlI5vGp9uvF7-hyg5ACMuSJsMMAjukqOgH3sSryWiOh9HIEDngqZj-hcaebs4SzGxvDSgKo_jl9oC4_Qjxxl695JP8bur3UBKFLfNuVptAdYcPRcKZeiCfQENSYIYyBfrv4VmO7GIXbK2F5VMTXk2qJr5QXgXxFt2b2J0qGCxDEE05gihEZ05jKqlPA2upJzM_CobOCWUEIZS0n6xweVB7JnEWNK_5n8Lx59cmBJRVBgLcCbMy8yQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"group.user10\",\r\n    \"email\": \"grop.user10@gmail.com\",\r\n    \"password\": \"Bluesky#!8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/635e49b32f17fd6e07cf351a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"635e49b32f17fd6e07cf351a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/admin/login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cGVyLmFkbWluQGdtYWlsLmNvbSIsImZ1bGxOYW1lIjoiYWRtaW4gc3VwZXIiLCJfaWQiOiI2MzVkZTU0NzZlODUzMTRlYWFlMjc4YTYiLCJyb2xlcyI6WyJ1c2VyIl0sImlhdCI6MTY2NzEwMzE4MSwiZXhwIjoxNjY3MTg5NTgxfQ.sTkjUpo83lN0gc1YIs0oHTrAeDTcx9QZE6qHHauE8oM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"super.admin2@gmail.com\",\r\n    \"password\": \"Bluesky#!8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"login"
+					]
+				},
+				"description": "Body params are\r\n{\r\n    \"email\": string,\r\n    \"password\": string\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/admin/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYwMzRmMTFmYTZkMGUzMWY1Mjk2YTciLCJpYXQiOjE2NjcyNDk1NTksImV4cCI6MTY2NzMzNTk1OX0.APMRBCx_Ww8sIr4-XVc3ogtGGPN9mW_VAne4pGVLQAUoeIHYFK83zZxLBOc1dXdk9o-5KB58Xr5CTotqxAnU3bvuZRQ1kqougiqQe4sJcn9ojN-d-iS8iEBb8bcM_ZEIwqd1h0DPItN63Dj4DdMph71cZgY2pfORCONsTt6XegtX4UgstGtCtg2ouGi2BAxyghCLSxDriLozgHLDC5Su9AkGUeLgT4qKnDlh1_BcwXoBYcVW6YMGTva0Sf2fjiQwChCi42ZYAn7RmzmVnF7kYw1ii_pX5zW0LEwg1znzTR79m5yZIhD31tGtRvLeatZ_8e-1Nbt0P2cEEA3zRpTnzw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"super.admin@gmail.com\",\r\n    \"password\": \"Bluesky#!8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"register"
+					]
+				},
+				"description": "Body\r\n{\r\n    \"fullname\": string,\r\n    \"email\": string,\r\n    \"password\": string\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/635e49b32f17fd6e07cf351a",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzVlZDY5OGJjN2Y0MjQ4ZGM2NTI2OTgiLCJpYXQiOjE2NjcxNzY2MzEsImV4cCI6MTY2NzI2MzAzMX0.5WjfqP-EHTZNvmbuCKw8mlu8s3oD94iXIB7Pcr9kComGiwyKiP26-hp6QPkWk3eUqoNC4J53wikCAs6QWyh3nf7wwiplRMnpaQlI5vGp9uvF7-hyg5ACMuSJsMMAjukqOgH3sSryWiOh9HIEDngqZj-hcaebs4SzGxvDSgKo_jl9oC4_Qjxxl695JP8bur3UBKFLfNuVptAdYcPRcKZeiCfQENSYIYyBfrv4VmO7GIXbK2F5VMTXk2qJr5QXgXxFt2b2J0qGCxDEE05gihEZ05jKqlPA2upJzM_CobOCWUEIZS0n6xweVB7JnEWNK_5n8Lx59cmBJRVBgLcCbMy8yQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"group.user11\",\r\n    \"email\": \"grop.user11@gmail.com\",\r\n    \"password\": \"Bluesky#!8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/635e49b32f17fd6e07cf351a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"635e49b32f17fd6e07cf351a"
+					]
+				},
+				"description": "Update user data\r\nBody\r\n{\r\n    \"username\": string,\r\n    \"email\": string,\r\n    \"password\" string\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzVlZDY5OGJjN2Y0MjQ4ZGM2NTI2OTgiLCJpYXQiOjE2NjcxNzY2MzEsImV4cCI6MTY2NzI2MzAzMX0.5WjfqP-EHTZNvmbuCKw8mlu8s3oD94iXIB7Pcr9kComGiwyKiP26-hp6QPkWk3eUqoNC4J53wikCAs6QWyh3nf7wwiplRMnpaQlI5vGp9uvF7-hyg5ACMuSJsMMAjukqOgH3sSryWiOh9HIEDngqZj-hcaebs4SzGxvDSgKo_jl9oC4_Qjxxl695JP8bur3UBKFLfNuVptAdYcPRcKZeiCfQENSYIYyBfrv4VmO7GIXbK2F5VMTXk2qJr5QXgXxFt2b2J0qGCxDEE05gihEZ05jKqlPA2upJzM_CobOCWUEIZS0n6xweVB7JnEWNK_5n8Lx59cmBJRVBgLcCbMy8yQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"group.user13\",\r\n    \"email\": \"grop.user13@gmail.com\",\r\n    \"password\": \"Bluesky#!8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYwMzRmMTFmYTZkMGUzMWY1Mjk2YTciLCJpYXQiOjE2NjcyNDk1NTksImV4cCI6MTY2NzMzNTk1OX0.APMRBCx_Ww8sIr4-XVc3ogtGGPN9mW_VAne4pGVLQAUoeIHYFK83zZxLBOc1dXdk9o-5KB58Xr5CTotqxAnU3bvuZRQ1kqougiqQe4sJcn9ojN-d-iS8iEBb8bcM_ZEIwqd1h0DPItN63Dj4DdMph71cZgY2pfORCONsTt6XegtX4UgstGtCtg2ouGi2BAxyghCLSxDriLozgHLDC5Su9AkGUeLgT4qKnDlh1_BcwXoBYcVW6YMGTva0Sf2fjiQwChCi42ZYAn7RmzmVnF7kYw1ii_pX5zW0LEwg1znzTR79m5yZIhD31tGtRvLeatZ_8e-1Nbt0P2cEEA3zRpTnzw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"group.user14\",\r\n    \"email\": \"group.user14@gmail.com\",\r\n    \"password\": \"Bluesky#!8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/636046f160dc132d9db7c6af",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"636046f160dc132d9db7c6af"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-tenant-id",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"first1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/admin/login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cGVyLmFkbWluQGdtYWlsLmNvbSIsImZ1bGxOYW1lIjoiYWRtaW4gc3VwZXIiLCJfaWQiOiI2MzVkZTU0NzZlODUzMTRlYWFlMjc4YTYiLCJyb2xlcyI6WyJ1c2VyIl0sImlhdCI6MTY2NzEwMzE4MSwiZXhwIjoxNjY3MTg5NTgxfQ.sTkjUpo83lN0gc1YIs0oHTrAeDTcx9QZE6qHHauE8oM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"super.admin2@gmail.com\",\r\n    \"password\": \"Bluesky#!8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
